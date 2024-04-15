@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="Slider/slider.css">
+</head>
+<body>
+
+
+    <!-- NavBar  1 -->
+    <div class = "navBar">
+        <div style="width: 200px;">
+            <img style = "width: 200px"src="ProfileLogos/ComapnyLogoBG.png">
+        </div>
+
+
+        <div class="searchBar">
+            <input class = "search" type="text" placeholder="Search">
+    
+        </div>
+
+        
+
+
+
+        <!-- <div>
+            About Us
+        </div>
+
+        <div>
+            FAQ
+        </div>
+
+        <div>Contact Us +977-9819145479</div> -->
+        <div class="logos">
+            <div>
+                <img style="width: 37px" src="ProfileLogos/CustomerLogoBG.png">
+            </div>
+            <div>
+                <img style="width: 50px; filter: contrast(150%) brightness(120%) saturate(80%);" src="ProfileLogos/CartLogoBG.png">
+            </div>
+            <div>
+                <img style = "width: 37px;" src="ProfileLogos/WishListLogoBG.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizental Line -->
+    <div style="height: 0px; border: solid 1px; border-color: rgba(0, 0, 0, 0.329);">
+    </div>
+
+    <!-- NavBar  2  -->
+    <div class="navBar2">
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Home</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Mobile</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Laptop</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">TV</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Watch</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Video/PhotoGraphy</div>
+
+        <div style="padding-left: 30px;
+        padding-right: 30px;">Entertainment</div>
+    </div>
+
+    <script>
+        var i = 0;
+        var images = []
+        var time = 3000;
+
+        images [0] = 'Slider/S24UltraSlider.jpg';
+        images [1] = 'Slider/Titanium-iPhone-15-Pro.webp';
+        images [2] = 'Slider/SonyBravia.jpg';
+
+        function changeImage() {
+            document.slide.src = images[i];
+
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+
+            setTimeout("changeImage()", time);
+        }
+
+        window.onload = changeImage;
+    </script>
+
+    <!-- <div class="slider">
+        <div class="slide" style="background-image: url('Slider/SonyBravia.jpg');"></div>
+        <div class="slide" style="background-image: url('Slider/Titanium-iPhone-15-Pro.webp');"></div>
+        <div class="slide" style="background-image: url('Slider/SonyBravia.jpg');"></div>
+      </div> -->
+
+    <img name = "slide" width = "100%">
+
+
+   
+
+
+   
+</body>
+</html>
